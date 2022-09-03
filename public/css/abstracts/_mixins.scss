@@ -23,7 +23,6 @@
   }
 }
 
-
 @mixin sibling($fontame) {
   @at-root #{&} + .#{$fontame} {
     @content;

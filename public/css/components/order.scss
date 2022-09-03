@@ -1,22 +1,18 @@
-
-.order{
+.order {
   position: relative;
 
-  &__spec{
+  &__spec {
     display: flex;
-    padding-top: 17px;
-    font-size: 14px;
-    font-weight: bold;
+    padding-top: 15px;
   }
 
-  &__label{
+  &__label {
     border-radius: 30px;
-    font-size: 13px;
     padding: 6px 12px;
     font-weight: lighter;
   }
 
-  &__details{
+  &__details {
     color: $mischka;
     position: absolute;
     @extend %center-vertically;
@@ -28,18 +24,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include media-breakpoint-down(md) {
+      top: 25px;
+    }
   }
 
-  &__delivered{
+  &__delivered {
     background-color: $mountain-meadow;
   }
-  &__current{
+
+  &__current {
     background-color: $dodger-blue;
   }
-  &__returned{
+
+  &__returned {
     background-color: $buttercup;
   }
-  &__canceled{
+
+  &__canceled {
     background-color: $carnation;
   }
 }

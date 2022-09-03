@@ -1,9 +1,8 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Link from 'next/link'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Link from "next/link";
 
 const Home: NextPage = () => {
-
   return (
     <div>
       <Head>
@@ -12,17 +11,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-          <Link href={"/adminPanel/dashboard"} passHref>
-              <button className="btn btn-primary">صفحه داشبورد</button>
-          </Link>
-      </main>
+      <main></main>
 
-      <footer>
-
-      </footer>
+      <footer></footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

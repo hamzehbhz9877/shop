@@ -5,11 +5,11 @@ $direction-base: rtl;
 
 //container
 $container-max-widths: (
-        sm: 100%,
-        md: 920px,
-        lg: 1060px,
-        xl: 1300px,
-        xxl: 1430px
+  sm: 100%,
+  md: 920px,
+  lg: 1060px,
+  xl: 1300px,
+  xxl: 1430px,
 );
 
 //input
@@ -23,15 +23,16 @@ $btn-focus-box-shadow: none;
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-
-$headings-font-weight:bold;
+$headings-font-weight: bold;
 
 //card
-$card-border-radius:                12px;
+$card-border-radius: 12px;
 
 //pagination
-$pagination-disabled-color:         $gray-400;
-$pagination-color:                  $shuttle-gray;
-$pagination-border-radius:          8px;
-$pagination-padding-y:3px;
+$pagination-disabled-color: $gray-400;
+$pagination-color: $shuttle-gray;
+$pagination-border-radius: 8px;
+$pagination-padding-y: 3px;
 
+//label
+$badge-font-size: 13px;

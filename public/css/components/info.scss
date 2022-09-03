@@ -1,21 +1,24 @@
-.user-comments{
-   .info + .info{
-     margin-top: 14px;
+.user-comments {
+  .info + .info {
+    margin-top: 14px;
   }
 }
 .info {
   &__star {
     padding: 1px 6px;
     border-radius: 6px !important;
-    &--low{
+
+    &--low {
       background-color: $pippin;
       color: $carnation;
     }
-    &--med{
+
+    &--med {
       background-color: $papaya-whip;
       color: $buttercup;
     }
-    &--high{
+
+    &--high {
       background-color: $pattens-blue;
       color: $dodger-blue;
     }
@@ -24,7 +27,7 @@
   &__shipping-result {
     background-color: $athens-gray;
     color: $oslo-gray;
-    padding: 2px 7px;
+    padding: 2px 10px;
     border-radius: 6px;
     font-size: 14px;
   }
@@ -38,7 +41,7 @@
     margin-top: 20px;
   }
 
-  &__info {
+  &__det {
     font-size: 14px;
     color: $mischka;
     padding-top: 15px;

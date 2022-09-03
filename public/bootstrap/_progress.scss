@@ -3,9 +3,12 @@
 // css-docs-start progress-keyframes
 @if $enable-transitions {
   @keyframes progress-bar-stripes {
-    0% { background-position-x: $progress-height; }
+    0% {
+      background-position-x: $progress-height;
+    }
   }
 }
+
 // css-docs-end progress-keyframes
 
 .progress {

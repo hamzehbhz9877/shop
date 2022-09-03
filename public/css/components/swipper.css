@@ -3,11 +3,11 @@
  * 10 |       background-color: $ebony-clay;
  *    |                         ^^^^^^^^^^^
  *    '
- *   swiper.scss 10:25  root stylesheet */
+ *   slider.scss 10:25  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
+    "Droid Sans Mono", monospace, monospace;
   white-space: pre;
   display: block;
   padding: 1em;

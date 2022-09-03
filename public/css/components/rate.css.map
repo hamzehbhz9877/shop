@@ -1,1 +1,10 @@
-{"version":3,"sourceRoot":"","sources":["rate.scss"],"names":[],"mappings":"AAIE;EACE;;AACA;EACE","file":"rate.css"}
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "rate.scss"
+  ],
+  "names": [],
+  "mappings": "AAIE;EACE;;AACA;EACE",
+  "file": "rate.css"
+}

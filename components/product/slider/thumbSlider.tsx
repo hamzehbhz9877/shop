@@ -1,19 +1,19 @@
-import React, {useEffect, useRef, useState} from 'react';
-import {Swiper, SwiperSlide} from "swiper/react";
-import {Navigation, Pagination, Thumbs, FreeMode} from "swiper";
-import CustomButtons from "components/swiper/customNavigationButton";
+import React, { useEffect, useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Thumbs, FreeMode } from "swiper";
+import CustomButtons from "components/slider/customNavigationButton";
 import UseNextPrevSwiper from "hooks/useNextPrevSwiper/useNextPrevSwiper";
 import ThumbSlideBottom from "components/product/slider/thumbSlideBottom";
 import ThumbSlideTop from "components/product/slider/thumbSliderTop";
-import useBreakpoint from 'use-breakpoint';
+import useBreakpoint from "use-breakpoint";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import {BREAKPOINTS} from "pages/_app";
-import {log} from "util";
-
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { BREAKPOINTS } from "pages/_app";
+import { log } from "util";
+import set = Reflect.set;
 
 // const breakpoint = {
 //     1200: {slidesPerView: 4},
@@ -23,51 +23,55 @@ import {log} from "util";
 // }
 
 export type ThumbSlidesType = {
-    slides: Array<{ image: string, id: number }>
-}
+  slides: Array<{ image: string; id: number }>;
+};
 
-const ThumbSlider = ({slides}: ThumbSlidesType) => {
-    const bulletRef = useRef<any>(null)
-    const [thumbsSwiper, setThumbsSwiper] = useState(null) as any
-    const {nextRef, prevRef, setSwiper, afterInit} = UseNextPrevSwiper()
-    const {minWidth, maxWidth} = useBreakpoint(BREAKPOINTS, 'tablet');
+const ThumbSlider = ({ slides }: ThumbSlidesType) => {
+  const bulletRef = useRef<any>(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState(null) as any;
+  const { nextRef, prevRef, setSwiper, afterInit } = UseNextPrevSwiper();
+  const { minWidth, maxWidth } = useBreakpoint(BREAKPOINTS, "tablet");
 
-    return (
-        <div className="product__thumb-slides">
-            <Swiper
-                modules={[Navigation, Pagination, Thumbs]}
-                onAfterInit={afterInit}
-                slidesPerView={1}
-                slidesPerGroup={1}
-                navigation={{prevEl: prevRef?.current, nextEl: nextRef?.current}}
-                updateOnWindowResize
-                pagination={{clickable: true, el: bulletRef?.current}}
-                onSwiper={setSwiper}
-                thumbs={{swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null}}
-            >
-                {slides?.map((slide, index) => (
-                    <SwiperSlide key={index}>
-                        <ThumbSlideTop {...slide}/>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-            <Swiper
-                onSwiper={setThumbsSwiper}
-                spaceBetween={10}
-                slidesPerView={4}
-                freeMode={true}
-                watchSlidesProgress={true}
-                modules={[FreeMode, Navigation, Thumbs]}
-            >
-                {slides?.map((slide, index) => (
-                    <SwiperSlide key={index}>
-                        <ThumbSlideBottom {...slide}/>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-            <CustomButtons bulletRef={bulletRef} nextRef={nextRef} prevRef={prevRef}/>
-        </div>
-    );
+  return (
+    <div className="product__thumb-slides">
+      <Swiper
+        modules={[Navigation, Pagination, Thumbs]}
+        onAfterInit={afterInit}
+        navigation={{ prevEl: prevRef?.current, nextEl: nextRef?.current }}
+        updateOnWindowResize
+        pagination={{ clickable: true, el: bulletRef?.current }}
+        onSwiper={setSwiper}
+        thumbs={{
+          swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+        }}
+      >
+        {slides?.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <ThumbSlideTop {...slide} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <Swiper
+        onSwiper={setThumbsSwiper}
+        spaceBetween={10}
+        slidesPerView={4}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+      >
+        {slides?.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <ThumbSlideBottom {...slide} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <CustomButtons
+        bulletRef={bulletRef}
+        nextRef={nextRef}
+        prevRef={prevRef}
+      />
+    </div>
+  );
 };
 
 export default ThumbSlider;

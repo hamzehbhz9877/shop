@@ -1,1 +1,10 @@
-{"version":3,"sourceRoot":"","sources":["input.scss"],"names":[],"mappings":"AAAA;EACE;;AACA;EACE;EACA","file":"input.css"}
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "input.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA;EACE;;AACA;EACE;EACA",
+  "file": "input.css"
+}

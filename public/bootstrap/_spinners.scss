@@ -4,8 +4,11 @@
 
 // css-docs-start spinner-border-keyframes
 @keyframes spinner-border {
-  to { transform: rotate(360deg) #{"/* rtl:ignore */"}; }
+  to {
+    transform: rotate(360deg) #{"/* rtl:ignore */"};
+  }
 }
+
 // css-docs-end spinner-border-keyframes
 
 .spinner-border {
@@ -40,6 +43,7 @@
     transform: none;
   }
 }
+
 // css-docs-end spinner-grow-keyframes
 
 .spinner-grow {

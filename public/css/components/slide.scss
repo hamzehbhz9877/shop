@@ -1,6 +1,7 @@
-.percent-sign{
+.percent-sign {
   padding-left: 1px;
 }
+
 .slide {
   position: relative;
   display: flex;
@@ -14,10 +15,20 @@
     border-radius: 12px 12px 0 0;
 
     &-wave {
-      position: absolute;
-      bottom: -50px;
-    }
+      img {
+        position: absolute !important;
 
+        bottom: -255px !important;
+
+        @include media-breakpoint-down(md) {
+          bottom: -225px !important;
+        }
+      }
+
+      > * {
+        overflow: visible !important;
+      }
+    }
 
     &-discount-percent {
       font-size: 14px;
@@ -34,15 +45,17 @@
   &__body {
     margin-top: 35px;
     padding: 15px;
-    &-price{
-      &-old{
-    font-size: 17px;
-      }
-      &-current{
-font-size: 15px;
+
+    &-price {
+      &-old {
+        font-size: 17px;
       }
 
+      &-current {
+        font-size: 15px;
+      }
     }
+
     &-title {
       font-size: 16px;
       font-weight: bold;
@@ -55,12 +68,13 @@ font-size: 15px;
       height: 16px;
       border-radius: 50%;
       margin-top: 15px;
+
       &:not(:nth-of-type(1)) {
         margin-right: -8px;
       }
+
       border: 2px solid #fff;
       box-sizing: content-box;
     }
   }
-
 }

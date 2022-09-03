@@ -1,16 +1,18 @@
-.linear-rate{
-  &__item{
-   & + &{
-     margin-top: 15px;
-   }
+.linear-rate {
+  &__item {
+    & + & {
+      margin-top: 15px;
+    }
   }
-  &__line{
+
+  &__line {
     position: relative;
     background-color: $athens-gray;
     height: 5px;
     border-radius: 12px;
     width: 100%;
-    div{
+
+    div {
       background-color: $pale-sky;
       position: absolute;
       inset: 0;
@@ -18,7 +20,6 @@
     }
   }
 
-  &__value{
-
+  &__value {
   }
 }

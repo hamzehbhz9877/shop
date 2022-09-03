@@ -1,24 +1,38 @@
-.similar-products{
+.similar-products {
   margin-top: 120px;
 }
-.product{
-padding: 25px;
 
+.product {
+  padding: 25px;
 
-  &__questions{
-    &-item{
-      &+&{
+  @include media-breakpoint-down(md) {
+    padding: 15px;
+  }
+
+  &__thumbSlider {
+    width: min(430px, 100%);
+    @include media-breakpoint-down(lg) {
+      width: 100% !important;
+    }
+  }
+
+  &__questions {
+    &-item {
+      & + & {
         margin-top: 14px;
       }
     }
-    &-reply{
+
+    &-reply {
       position: relative;
       margin-right: 50px;
       margin-top: 14px;
-      div + div{
+
+      div + div {
         margin-top: 14px;
       }
-      &-icon{
+
+      &-icon {
         position: absolute;
         right: -30px;
         color: $mischka;
@@ -26,90 +40,122 @@ padding: 25px;
     }
   }
 
-&__add-comment{
-  width: 100%;
-  border: 1px dashed $mischka;
-  margin-top: 35px;
-}
+  &__add-comment {
+    width: 100%;
+    border: 1px dashed $mischka;
+    margin-top: 35px;
+  }
 
-&__tab{
-    &-specification{
-    &-item{
-      color: $pale-sky;
-      & + &{
-        margin-top: 13px;
+  &__comment {
+    &-right {
+      position: sticky;
+      top: 0;
+      @include media-breakpoint-down(md) {
+        position: static;
+        padding-right: 0 !important;
       }
-      div{
-        background-color: $athens-gray;
-        padding: 10px;
+    }
+  }
 
-        &:first-of-type{
-          margin-left: 13px;
-          width: 180px;
+  &__tab {
+    &-specification {
+      &-item {
+        color: $pale-sky;
+
+        & + & {
+          margin-top: 8px;
         }
-        &:last-of-type{
-          flex: 1;
+
+        div {
+          background-color: $athens-gray;
+          padding: 10px;
+
+          &:first-of-type {
+            margin-left: 13px;
+            width: 210px;
+          }
+
+          &:last-of-type {
+            flex: 1;
+          }
         }
       }
     }
-    }
+  }
 
-
-}
-
-  &__specification{
-    &-line{
+  &__specification {
+    &-line {
       height: 1px;
       background-color: $Iron;
       margin-right: 35px;
     }
-    &-title{
-  margin: 7px 0 13px 0;
+
+    &-title {
+      margin: 7px 0 13px 0;
     }
-    &-property{
-        padding:2px 0;
+
+    &-property {
+      padding: 2px 0;
     }
   }
-  &__thumb-slides{
 
-    img{
+  &__thumb-slides {
+    img {
       width: 100%;
       height: 100%;
     }
-    &-top{
-margin-bottom: 10px;
-height: 420px;
-    }
-    &-bottom{
-     height: 100px;
 
+    &-top {
+      margin-bottom: 10px;
+      height: 420px;
     }
-    @include media-breakpoint-down(lg){
+
+    &-bottom {
+      height: 100px;
+    }
+
+    @include media-breakpoint-down(lg) {
       object-fit: contain;
-      &-top{
+      &-top {
+        span,
+        img {
+          position: static !important;
+          height: auto !important;
+        }
+
         height: auto;
       }
-      &-bottom{
+      &-bottom {
+        span,
+        img {
+          position: static !important;
+          height: auto !important;
+        }
+
         height: auto;
       }
     }
   }
-  &__off{
+
+  &__off {
     background-color: $we-peep;
     border: 1px dashed $carnation;
     border-radius: 8px;
     padding: 12px;
-    span{
+
+    span {
       color: $carnation;
     }
-    &-timer{
-      .colon-splitter{
+
+    &-timer {
+      .colon-splitter {
         background-color: transparent;
         font-size: 25px;
         padding: 0 2px;
         color: $carnation;
       }
-      &-value{
+
+      &-value {
         min-width: 0;
         background-color: $carnation;
         display: inline-block;
@@ -120,100 +166,127 @@ height: 420px;
       }
     }
   }
-  &__cart{
+
+  &__cart {
     margin-top: 16px;
     border: 1px dashed $mischka;
     padding: 12px;
     border-radius: 8px;
-    &-advantage
-    {
+
+    &-advantage {
       margin-top: 20px;
-      svg{
+
+      svg {
         width: 20px;
         height: 20px;
         margin-bottom: 10px;
       }
-      div{
+
+      div {
         text-align: center;
       }
-      span{
+
+      span {
         display: block;
       }
     }
-    &-count{
+
+    &-count {
       border-radius: 20px;
       border: 1px dashed $mischka;
       width: 115px;
-      svg{
+
+      svg {
         margin: 7px;
       }
-      &-plus,&-minus{
+
+      &-plus,
+      &-minus {
         margin: 4px;
         border-radius: 50%;
       }
 
-      &-plus{
+      &-plus {
         background-color: $pattens-blue;
 
-        svg{
+        svg {
           color: $cornflower-blue;
         }
       }
-      &-minus{
+
+      &-minus {
         background-color: $carnation-100;
-        &:disabled{
-          opacity: .3;
+
+        &:disabled {
+          opacity: 0.3;
         }
-        svg{
+
+        svg {
           color: $carnation;
         }
       }
-
     }
-    >div{
-padding: 12px 0;
-      & + div{
+
+    > div {
+      padding: 12px 0;
+
+      & + div {
         border-top: 1px dashed $mischka;
       }
     }
-    &-size-item{
-      &:first-of-type{
+
+    &-size-item {
+      &:first-of-type {
         margin-right: 7px;
       }
+
       & + & {
         margin-right: 15px;
       }
     }
-    &-color-item{
+
+    &-color-item {
       width: 23px;
       height: 23px;
       border-radius: 50%;
-      position:relative;
+      position: relative;
 
-      &--active{
+      &--active {
       }
-      & + &{
+
+      & + & {
         margin-right: 4.5px;
       }
     }
   }
-  &__tab-items{
-    padding: 6px 20px;
-    svg{
+
+  &__tab-items {
+    position: relative;
+    padding: 6px 30px;
+
+    a {
+      border-radius: 7px;
+      width: 120px;
+    }
+
+    svg {
       font-size: 15px;
       margin-left: 6px;
     }
-    li + li{
-      margin-right: 20px;
+
+    ul {
+      gap: 11px;
     }
-    .active{
-      background-color: $mako;
-      color: white;
-    }
-    >div{
+
+    //.active{
+    //  background-color: $mako;
+    //  color: white;
+    //}
+    > div {
       padding: 25px;
     }
-    &::after{
+
+    &::after {
       content: "";
       position: absolute;
       top: 100%;
@@ -223,12 +296,20 @@ padding: 12px 0;
       left: 0;
       right: 0;
     }
-   }
-  &__detail{
+  }
+
+  &__detail {
     padding: 0;
-    >div{
-      padding: 25px;
-      &:not(:first-of-type,:last-of-type){
+
+    > div {
+      padding: 25px 0;
+      margin: 0 25px;
+      @include media-breakpoint-down(md) {
+        padding: 15px 0;
+        margin: 0 15px;
+      }
+
+      &:not(:first-of-type, :last-of-type) {
         border-bottom: 2px dashed $mischka;
       }
     }

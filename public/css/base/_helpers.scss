@@ -1,7 +1,6 @@
-
 %clearfix::after {
   clear: both;
-  content: '';
+  content: "";
   display: table;
 }
 
@@ -32,5 +31,3 @@
   top: 50%;
   transform: translateY(-50%);
 }
-
-

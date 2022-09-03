@@ -1,1 +1,10 @@
-{"version":3,"sourceRoot":"","sources":["slide.scss"],"names":[],"mappings":"AAAA;EACA;EACE;;AACA;EAEE;EACA;EACA","file":"slide.css"}
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "slide.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA;EACA;EACE;;AACA;EAEE;EACA;EACA",
+  "file": "slide.css"
+}

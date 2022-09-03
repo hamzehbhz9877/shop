@@ -1,22 +1,25 @@
-.swiper-wrapper{
+.swiper-wrapper {
   max-width: 0;
 }
-.swiper-pagination{
+
+.swiper-pagination {
   display: flex !important;
-  &-bullet{
+
+  &-bullet {
     background-color: black !important;
-    opacity: .5 !important;
+    opacity: 0.5 !important;
     width: 10px !important;
     height: 10px !important;
-    &-active{
+
+    &-active {
       opacity: 1 !important;
       background-color: $ebony-clay !important;
       padding: 2px 12px !important;
       border-radius: 6px !important;
     }
-    & + &{
+
+    & + & {
       margin-right: 2px !important;
     }
   }
 }
-

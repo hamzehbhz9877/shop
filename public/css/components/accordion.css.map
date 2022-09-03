@@ -1,1 +1,10 @@
-{"version":3,"sourceRoot":"","sources":["accordion.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA","file":"accordion.css"}
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "accordion.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA;EACE;EACA;EACA",
+  "file": "accordion.css"
+}

@@ -1,12 +1,12 @@
-.section-title{
+.section-title {
   position: relative;
   display: inline-block;
-  color:$oslo-gray;
+  color: $oslo-gray;
   margin-bottom: 30px;
 
-  &::after{
+  &::after {
     position: absolute;
-    content:"";
+    content: "";
     background-color: $link-color;
     width: 62%;
     height: 2px;

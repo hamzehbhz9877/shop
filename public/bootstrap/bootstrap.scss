@@ -9,13 +9,11 @@
 /*2. Include any default variable overrides here*/
 @import "override";
 
-
 /*3. Include remainder of required Bootstrap stylesheets*/
 @import "scss/variables";
 @import "scss/mixins";
 @import "scss/utilities";
 @import "scss/utilities/api";
-
 
 /*4. Include any optional Bootstrap components as you like*/
 @import "scss/root";
@@ -33,4 +31,3 @@
 /*5. Add additional override code here*/
 
 @import "../css/components/button";
-

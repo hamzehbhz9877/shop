@@ -7,15 +7,16 @@
   padding: 1rem 0;
 
   &__icon {
-    margin-left: .3rem;
+    margin-left: 0.3rem;
   }
 
   //right section of header
   &__right {
     &-link {
-      padding: .3rem 1.2rem;
+      padding: 0.3rem 1.2rem;
       border-radius: 20px;
       color: $oxford-blue;
+
       &--active {
         @extend %active-item;
       }
@@ -39,19 +40,22 @@
       padding: 6px;
       background-color: white;
       border-radius: 30px;
-      &-text{
+
+      &-text {
         padding: 0 8px 0 11px;
       }
+
       &-img {
         width: 30px;
         height: 30px;
         border-radius: 50%;
       }
-      &-icon-opacity{
+
+      &-icon-opacity {
         @extend %center-vertically;
         position: absolute;
         opacity: 50%;
-        left:13px
+        left: 13px;
       }
     }
   }

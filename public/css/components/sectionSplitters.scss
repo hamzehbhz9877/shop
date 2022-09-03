@@ -1,22 +1,23 @@
-%splitter{
+%splitter {
   margin: 0 15px;
   display: inline-block;
 }
-.line-splitter{
+
+.line-splitter {
   width: 1px;
   height: auto;
   background-color: $athens-gray;
   @extend %splitter;
 }
 
-.text-splitter-dot{
+.text-splitter-dot {
   width: 4px;
   height: 4px;
   color: $mischka;
   @extend %splitter;
 }
 
-.text-splitter-slash{
+.text-splitter-slash {
   color: $mischka;
   margin: 0 10px;
   @extend %splitter;

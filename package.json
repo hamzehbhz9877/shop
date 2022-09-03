@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
     "next": "12.2.5",
@@ -23,8 +25,9 @@
     "@types/react": "18.0.18",
     "@types/react-dom": "18.0.6",
     "@types/react-scroll": "^1.8.4",
-    "eslint": "8.23.0",
+    "eslint": "8.22.0",
     "eslint-config-next": "12.2.5",
+    "prettier": "^2.7.1",
     "typescript": "4.8.2",
     "url-loader": "^4.1.1"
   }

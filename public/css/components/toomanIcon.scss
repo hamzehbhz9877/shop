@@ -1,9 +1,10 @@
-.tomman{
-  &-text{
+.tomman {
+  &-text {
     position: relative;
     font-size: 15px;
     color: black;
   }
+
   &__last-letter {
     position: absolute;
     top: -15px;
