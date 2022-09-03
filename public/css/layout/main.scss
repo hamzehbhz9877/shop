@@ -1,0 +1,13 @@
+
+.main{
+    display: flex;
+}
+
+//panels
+.panel__main {
+    padding: 30px 15px;
+    padding-left:0 ;
+    @include media-breakpoint-down(lg) {
+        padding: 20px 0;
+    }
+}

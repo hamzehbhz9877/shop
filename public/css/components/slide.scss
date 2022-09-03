@@ -1,0 +1,66 @@
+.percent-sign{
+  padding-left: 1px;
+}
+.slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__title {
+    position: relative;
+    height: 230px;
+    background-color: $catskill-white;
+    border-radius: 12px 12px 0 0;
+
+    &-wave {
+      position: absolute;
+      bottom: -50px;
+    }
+
+
+    &-discount-percent {
+      font-size: 14px;
+      padding: 1px 5px;
+      color: white;
+      background-color: $carnation;
+      border-radius: 6px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  }
+
+  &__body {
+    margin-top: 35px;
+    padding: 15px;
+    &-price{
+      &-old{
+    font-size: 17px;
+      }
+      &-current{
+font-size: 15px;
+      }
+
+    }
+    &-title {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+
+    &-colors-item {
+      position: relative;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      margin-top: 15px;
+      &:not(:nth-of-type(1)) {
+        margin-right: -8px;
+      }
+      border: 2px solid #fff;
+      box-sizing: content-box;
+    }
+  }
+
+}

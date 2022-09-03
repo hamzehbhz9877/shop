@@ -1,0 +1,13 @@
+/**
+ * Basic typography style for copy text
+ */
+
+body {
+  direction: $direction-base;
+}
+
+p {
+  margin: 1rem 0;
+  text-align: justify;
+}
+

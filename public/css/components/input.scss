@@ -1,0 +1,18 @@
+.input{
+  position: relative;
+&__box{
+  padding-right: 45px;
+  border-radius: 12px;
+}
+  &__icon{
+    position: absolute;
+    color: $oslo-gray;
+    right: 15px;
+    @extend %center-vertically;
+  }
+  &__button{
+    position: absolute;
+    left: 7px;
+    @extend %center-vertically;
+  }
+}

@@ -1,0 +1,30 @@
+.main {
+  margin-right: 0;
+  margin-top: 4rem;
+  padding: 2em 1.5em;
+}
+
+.card {
+  padding: 15px;
+}
+
+.mobile {
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .main {
+    margin-right: 300px;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .w-sm-100 {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

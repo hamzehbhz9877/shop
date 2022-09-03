@@ -1,0 +1,64 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+textarea {
+  resize: none;
+  padding: 1em;
+}
+
+
+i {
+  vertical-align: middle !important;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+ol, ul {
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.text-overflow{
+  display: inline-block;
+  @include text-truncate();
+}
+.min-w-0{
+  min-width: 0;
+}
+.card{
+  padding: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}

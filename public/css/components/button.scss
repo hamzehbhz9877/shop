@@ -1,0 +1,22 @@
+//
+//$colors: (
+//        "filter":$color__galliano,
+//        "upload-file":$color__lochmara,
+//        "add":$color__fruit-salad,
+//        "submit":$color__fruit-salad,
+//        "show":$color__lochmara,
+//        "delete":$color__pomegranate,
+//        "edit":$color__wattle
+//);
+//
+//@each $color, $value in $colors {
+//  .btn--#{$color} {
+//    @include button-variant($value, $value,$color:white,$hover-color:white,$active-color:white);
+//  }
+//}
+//
+//@each $color, $value in $colors {
+//  .btn-outline-#{$color} {
+//    @include button-outline-variant($value);
+//  }
+//}

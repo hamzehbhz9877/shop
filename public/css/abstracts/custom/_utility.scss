@@ -1,0 +1,55 @@
+$utilities: map-merge(
+                $utilities,
+                (
+                        "custom-color": (
+                                property: color,
+                                class: color,
+                                values: $custom-colors,
+                        ),
+                        "custom-font":(
+                                property: font-size,
+                                class: font,
+                                values: $custom-value,
+                        ),
+                        "custom-padding":(
+                                property: padding-top padding-bottom padding-left padding-right,
+                                class: p,
+                                values: $custom-value,
+                        ),
+                        "custom-padding-y":(
+                                property: padding-top padding-bottom,
+                                class: py,
+                                values: $custom-value,
+                        ),
+                        "custom-padding-x":(
+                                property: padding-right padding-left,
+                                class: px,
+                                values: $custom-value,
+                        ),
+                        "custom-padding-top":(
+                                property: padding-top,
+                                class: pt,
+                                values: $custom-value,
+                        ),
+                        "custom-padding-bottom":(
+                                property: padding-bottom,
+                                class: pb,
+                                values: $custom-value,
+                        ),
+                        "custom-padding-left":(
+                                property: padding-left,
+                                class: pl,
+                                values: $custom-value,
+                        ),
+                        "custom-padding-right":(
+                                property: padding-right,
+                                class: pr,
+                                values: $custom-value,
+                        ),
+                        "opacity":(
+                                property: opacity,
+                                class: opacity,
+                                values: $opacity,
+                        )
+                )
+);

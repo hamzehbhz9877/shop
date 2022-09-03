@@ -1,0 +1,58 @@
+%active-item {
+  color: white !important;
+  background-color: $carnation;
+}
+
+.header {
+  padding: 1rem 0;
+
+  &__icon {
+    margin-left: .3rem;
+  }
+
+  //right section of header
+  &__right {
+    &-link {
+      padding: .3rem 1.2rem;
+      border-radius: 20px;
+      color: $oxford-blue;
+      &--active {
+        @extend %active-item;
+      }
+    }
+  }
+
+  //left section of header
+  &__left {
+    &-order-basket {
+      padding: 10px;
+      position: relative;
+
+      &-count-label {
+        right: -15px;
+        top: -5px;
+      }
+    }
+
+    &-user {
+      position: relative;
+      padding: 6px;
+      background-color: white;
+      border-radius: 30px;
+      &-text{
+        padding: 0 8px 0 11px;
+      }
+      &-img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+      &-icon-opacity{
+        @extend %center-vertically;
+        position: absolute;
+        opacity: 50%;
+        left:13px
+      }
+    }
+  }
+}

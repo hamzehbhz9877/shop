@@ -1,0 +1,12 @@
+.tomman-text {
+  position: relative;
+  font-size: 15px;
+  color: black;
+}
+.tomman__last-letter {
+  position: absolute;
+  top: -14px;
+  left: 0;
+}
+
+/*# sourceMappingURL=toomanIcon.css.map */

@@ -1,0 +1,11 @@
+.accordion{
+  //padding: 10px 15px;
+  margin-top: 35px;
+  color: $oslo-gray;
+  &__icon{
+    margin: 0 10px;
+    &-base{
+      margin-left: 13px;
+    }
+  }
+}

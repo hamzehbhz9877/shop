@@ -1,0 +1,156 @@
+
+.sidebar {
+  background-color: white;
+  margin-right: -290px;
+  height: max-content;
+  width: 290px;
+  overflow-y: auto;
+  z-index: 102;
+  margin-top: 30px;
+  border-radius: 12px;
+
+  &__bottom {
+
+    &-item {
+      & + & {
+        border-top: 1px solid $athens-gray;
+      }
+
+      :hover .sidebar__bottom-icon-angle-left {
+        color: $link-color;
+      }
+    }
+
+    &-icon {
+      margin-left: 15px;
+
+      &-angle-left {
+        color: $mischka;
+        width: 10px !important;
+        margin-left: 0 !important;
+      }
+    }
+
+    &-link {
+      font-size: 17px;
+      padding: 15px;
+      display: inline-block;
+      width: 100%;
+      position: relative;
+
+      &-count-label {
+        left: 40px;
+        @extend %center-vertically;
+      }
+
+      &--active {
+        color: $link-color;
+
+        ::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          height: 80%;
+          margin: auto 0;
+          width: 3px;
+          background-color: $link-color;
+        }
+        & .sidebar__bottom-icon-arrow-left{
+          display: block !important;
+          color: $link-color;
+          font-size: 14px;
+          left: 13px;
+          margin-left: 0;
+        }
+        & .sidebar__bottom-icon-angle-left {
+          display: none;
+          color: $link-color;
+        }
+      }
+    }
+
+  }
+
+  &__top {
+    padding: 20px 15px;
+
+    &-inventory{
+      font-size: 15px;
+    }
+    &-line {
+      position: absolute;
+      top: 100%;
+      content: "";
+      height: 65px;
+      right: 24px;
+      width: 2px;
+      background-color: $athens-gray;
+    }
+
+    &-dot {
+      position: absolute;
+      top: calc(100% + (65px / 2 - 5px));
+      right: 20px;
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $athens-gray;
+    }
+
+    &-profile {
+      &-img {
+        margin-left: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 16px;
+        border: 1px solid $athens-gray;
+      }
+
+      &-phone-number {
+        font-size: 13px;
+        color: $mischka;
+      }
+
+      &-user-name {
+        font-size: 17px;
+      }
+    }
+
+    &-wallet {
+      padding-top: 24px;
+      margin-right: 40px;
+
+      &-text {
+        font-size: 17px;
+      }
+
+      &-price {
+        font-size: 12px !important;
+      }
+
+      &-increase {
+        color: $link-color;
+        font-size: 14px;
+      }
+    }
+  }
+
+
+  @include media-breakpoint-up(lg) {
+
+    margin-right: 0;
+  }
+  @include media-breakpoint-down(lg) {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+}
+
+
+

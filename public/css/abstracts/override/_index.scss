@@ -1,0 +1,37 @@
+//general
+$body-bg: $athens-gray;
+$font-family-base: "IranSans", sans-serif;
+$direction-base: rtl;
+
+//container
+$container-max-widths: (
+        sm: 100%,
+        md: 920px,
+        lg: 1060px,
+        xl: 1300px,
+        xxl: 1430px
+);
+
+//input
+$input-padding-y: 12px;
+$input-padding-x: 12px;
+$input-bg: $athens-gray;
+
+//button
+$btn-focus-width: 0;
+$btn-focus-box-shadow: none;
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+$headings-font-weight:bold;
+
+//card
+$card-border-radius:                12px;
+
+//pagination
+$pagination-disabled-color:         $gray-400;
+$pagination-color:                  $shuttle-gray;
+$pagination-border-radius:          8px;
+$pagination-padding-y:3px;
+

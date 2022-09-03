@@ -1,0 +1,59 @@
+.user-comments{
+   .info + .info{
+     margin-top: 14px;
+  }
+}
+.info {
+  &__star {
+    padding: 1px 6px;
+    border-radius: 6px !important;
+    &--low{
+      background-color: $pippin;
+      color: $carnation;
+    }
+    &--med{
+      background-color: $papaya-whip;
+      color: $buttercup;
+    }
+    &--high{
+      background-color: $pattens-blue;
+      color: $dodger-blue;
+    }
+  }
+
+  &__shipping-result {
+    background-color: $athens-gray;
+    color: $oslo-gray;
+    padding: 2px 7px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  &__description {
+    max-width: max-content;
+    width: 100%;
+    color: $mako;
+    font-size: 17px;
+    margin-bottom: 13px !important;
+    margin-top: 20px;
+  }
+
+  &__info {
+    font-size: 14px;
+    color: $mischka;
+    padding-top: 15px;
+    border-top: 1px solid $Iron;
+  }
+
+  &__like {
+    &--active {
+      color: $link-color;
+    }
+  }
+
+  &__dislike {
+    &--active {
+      color: $carnation;
+    }
+  }
+}

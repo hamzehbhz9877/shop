@@ -1,0 +1,9 @@
+// css-docs-start clearfix
+@mixin clearfix() {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+// css-docs-end clearfix

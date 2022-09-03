@@ -1,0 +1,45 @@
+
+.order{
+  position: relative;
+
+  &__spec{
+    display: flex;
+    padding-top: 17px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &__label{
+    border-radius: 30px;
+    font-size: 13px;
+    padding: 6px 12px;
+    font-weight: lighter;
+  }
+
+  &__details{
+    color: $mischka;
+    position: absolute;
+    @extend %center-vertically;
+    left: 15px;
+    border: 1px solid $athens-gray;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__delivered{
+    background-color: $mountain-meadow;
+  }
+  &__current{
+    background-color: $dodger-blue;
+  }
+  &__returned{
+    background-color: $buttercup;
+  }
+  &__canceled{
+    background-color: $carnation;
+  }
+}

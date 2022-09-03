@@ -1,0 +1,13 @@
+.count-label{
+  font-size: 13px;
+  content: "";
+  position: absolute;
+  color: white;
+  border-radius: 50%;
+  background-color: $carnation;
+  height: 23px;
+  width: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

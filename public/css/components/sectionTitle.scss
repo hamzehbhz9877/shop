@@ -1,0 +1,18 @@
+.section-title{
+  position: relative;
+  display: inline-block;
+  color:$oslo-gray;
+  margin-bottom: 30px;
+
+  &::after{
+    position: absolute;
+    content:"";
+    background-color: $link-color;
+    width: 62%;
+    height: 2px;
+    border-radius: 12px;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+  }
+}

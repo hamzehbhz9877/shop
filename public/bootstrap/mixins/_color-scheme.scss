@@ -1,0 +1,7 @@
+// css-docs-start mixin-color-scheme
+@mixin color-scheme($name) {
+  @media (prefers-color-scheme: #{$name}) {
+    @content;
+  }
+}
+// css-docs-end mixin-color-scheme

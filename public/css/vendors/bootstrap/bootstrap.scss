@@ -1,0 +1,33 @@
+// Custom.css
+@import "../../abstracts/variables";
+
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../../bootstrap/functions";
+
+// 2. Include remainder of required Bootstrap stylesheets
+@import "../../../bootstrap/variables";
+@import "../../../bootstrap/mixins";
+@import "../../../bootstrap/utilities";
+
+@import "../../abstracts/custom/utility";
+
+@import "../../../bootstrap/utilities/api";
+
+// 3. Include any default variable overrides here
+@import "../../abstracts/override/index";
+
+// 4. Include any optional Bootstrap components as you like
+@import "../../../bootstrap/root";
+@import "../../../bootstrap/containers";
+@import "../../../bootstrap/reboot";
+@import "../../../bootstrap/type";
+@import "../../../bootstrap/images";
+@import "../../../bootstrap/grid";
+@import "../../../bootstrap/card";
+@import "../../../bootstrap/buttons";
+@import "../../../bootstrap/forms";
+@import "../../../bootstrap/badge";
+@import "../../../bootstrap/pagination";
+
+// 5. Add additional override code here
